@@ -1,39 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Project tracking intro component</title>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Project tracking intro component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  Product
-  Features
-  Pricing
-  Login
+    <!-- background -->
 
-  New
-  Monograph Dashboard
+    <div class="container">
+        <div class="shell"></div>
+    </div>
+    <!--nav-->
+    <div class="navbar">
+        <div class="upper">
 
-  Powerful insights into your team
-  Project planning and time tracking for agile teams
+            <div class="img-container">
+                <img src="images/logo.svg">
+            </div>
 
-  Schedule a demo
-  to see a live preview
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+            <div class=" menu-open">
+                <img src="images/icon-hamburger.svg" alt="">
+            </div>
+            <div class=" menu-close">
+                <img src="images/icon-close.svg" alt="">
+            </div>
+
+        </div>
+
+        <ul class="menu-container">
+            <li>
+                <a href="#">Product</a>
+            </li>
+            <li>
+                <a href="#">Features</a>
+            </li>
+            <li>
+                <a href="#">Pricing</a>
+            </li>
+            <li>
+                <a href="#"><span>.</span></a>
+            </li>
+            <hr>
+            <li>
+                <a href="#">Login</a>
+            </li>
+        </ul>
+
+    </div>
+    <!--nav-->
+
+    <!-- body  -->
+    <div class="body">
+        <div class="right-body">
+
+            <div class="one">
+                <span class="new">NEW</span>
+                <span class="lt">MONOGRAPH DASHBOARD</span>
+            </div>
+
+            <div class="two">
+                <h3>powerful insights into your team</h3>
+            </div>
+
+            <div class="three">
+                <p>Project planning and time tracking for agile teams</p>
+            </div>
+
+            <div class="four">
+                <button class="button">SCHEDULE A DEMO</button>
+                <span class="ls">TO SEE A PREVIEW</span>
+            </div>
+
+        </div>
+
+        <div class="left-body">
+            <img src="images/illustration-devices.svg" alt="" class="image">
+        </div>
+    </div>
+
+
+    <script src="./index.js"></script>
 </body>
+
 </html>
+<!-- http://localhost:5500/index.html -->
